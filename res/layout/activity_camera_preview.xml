@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraPreviewActivity"
+    android:background="@color/cam_preview_main_frame_lay_back">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_panel_height_size_flash_mic_cam">
+
+            <RelativeLayout
+                android:id="@+id/topPanelVideoRecordRelativeLay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/top_panel_height_size_flash_mic_cam"
+                android:visibility="visible"
+                android:background="@color/black_background">
+
+                <ImageView
+                    android:id="@+id/pointRed"
+                    android:layout_width="@dimen/top_panel_height_size_flash_mic_cam"
+                    android:layout_height="@dimen/top_panel_height_size_flash_mic_cam"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="@dimen/btn_flash_marginStart_End_Top_Bottom"
+                    android:src="@drawable/point_red_normal"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/pointOrange"
+                    android:layout_width="@dimen/top_panel_height_size_flash_mic_cam"
+                    android:layout_height="@dimen/top_panel_height_size_flash_mic_cam"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="@dimen/btn_flash_marginStart_End_Top_Bottom"
+                    android:visibility="invisible"
+                    android:src="@drawable/point_orange_normal"
+                    tools:ignore="ContentDescription" />
+
+                <Chronometer
+                    android:id="@+id/chronometerTimerVideoRecord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/top_panel_height_size_flash_mic_cam"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/pointOrange"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white_text"
+                    android:textSize="@dimen/timer_video_record_text" />
+
+                <Chronometer
+                    android:id="@+id/chronometerTimerSizeOfMemory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/top_panel_height_size_flash_mic_cam"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/gray_text"
+                    android:textSize="@dimen/timer_video_record_text" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/topPanelRelativeLay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/top_panel_height_size_flash_mic_cam"
+                android:visibility="visible"
+                android:background="@color/black_background">
+
+                <ImageView
+                    android:id="@+id/btnFlash"
+                    android:layout_width="@dimen/top_panel_height_size_flash_mic_cam"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="@dimen/btn_flash_marginStart_End_Top_Bottom"
+                    android:layout_marginTop="@dimen/btn_flash_marginStart_End_Top_Bottom"
+                    android:layout_marginBottom="@dimen/btn_flash_marginStart_End_Top_Bottom"
+                    android:src="@drawable/flash_off"
+                    android:onClick="onClickFlashMode"
+                    tools:ignore="ContentDescription" />
+
+                <Button
+                    android:id="@+id/btnSpeedVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@id/btnFlash"
+                    android:layout_toStartOf="@id/btnMic"
+                    android:layout_centerVertical="true"
+                    android:includeFontPadding="false"
+                    android:background="@android:color/transparent"
+                    android:text="@string/speed_normal"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/white_text"
+                    android:textSize="@dimen/speed_video_text"
+                    android:onClick="onClickSpeedVideo" />
+
+                <ImageView
+                    android:id="@+id/btnMic"
+                    android:layout_width="@dimen/top_panel_height_size_flash_mic_cam"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/btn_flash_marginStart_End_Top_Bottom"
+                    android:layout_marginBottom="@dimen/btn_flash_marginStart_End_Top_Bottom"
+                    android:src="@drawable/mic_on"
+                    android:onClick="onClickMicMode"
+                    tools:ignore="ContentDescription" />
+
+                <Button
+                    android:id="@+id/btnFormatVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@id/btnMic"
+                    android:layout_toStartOf="@id/btnTypeCam"
+                    android:layout_centerVertical="true"
+                    android:includeFontPadding="false"
+                    android:background="@android:color/transparent"
+                    android:text="@string/format_16x10"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/white_text"
+                    android:textSize="@dimen/format_video_text"
+                    android:onClick="onClickFormatVideo" />
+
+                <ImageView
+                    android:id="@+id/btnTypeCam"
+                    android:layout_width="@dimen/cam_icon_width"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="@dimen/btn_flash_marginStart_End_Top_Bottom"
+                    android:layout_marginTop="@dimen/btn_flash_marginStart_End_Top_Bottom"
+                    android:layout_marginBottom="@dimen/btn_flash_marginStart_End_Top_Bottom"
+                    android:src="@drawable/cam_back"
+                    android:onClick="onClickTypeCam"
+                    tools:ignore="ContentDescription" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageHideCameraPreview"
+        android:layout_width="match_parent"
+        android:layout_height="10000dp"
+        android:layout_marginTop="200dp"
+        android:background="@color/black_background"
+        tools:ignore="ContentDescription" />
+
+    <FrameLayout
+        android:id="@+id/btnAndImgVideoRecorderFrameLay"
+        android:layout_width="@dimen/btn_video_record_width_height"
+        android:layout_height="@dimen/btn_video_record_width_height"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="@dimen/btn_record_save_cancel_marginBottom">
+        <Button
+            android:id="@+id/btnVideoRecorder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|bottom"
+            android:background="@drawable/btn_video_record" />
+
+        <ImageView
+            android:id="@+id/imgCamillionPauseSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|bottom"
+            android:src="@drawable/camillion"
+            tools:ignore="ContentDescription" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/redLineHideCameraPreview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/red_line_height"
+        android:layout_marginTop="200dp"
+        android:background="@android:color/holo_red_dark"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/cancelSaveLinLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:visibility="visible"
+        android:layout_marginBottom="@dimen/btn_record_save_cancel_marginBottom">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:onClick="onClickCancel"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/cancel_record"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/btn_cancel_textSize" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:onClick="onClickSave"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/save_record"
+            android:textSize="@dimen/btn_save_waitPercent_textSize" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/redText15or60seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/top_panel_height_size_flash_mic_cam"
+        android:layout_marginStart="@dimen/text_zoom_speed_marginStart"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/holo_red_dark"
+        android:fontFamily="sans-serif-light"
+        android:text="60"
+        android:textSize="@dimen/text_zoom_speed_textSize"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textZoomVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/text_zoom_marginBottom"
+        android:layout_marginStart="@dimen/text_zoom_speed_marginStart"
+        android:background="@android:color/transparent"
+        android:textColor="@color/gray_text"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/zoom_text_0_0x"
+        android:textSize="@dimen/text_zoom_speed_textSize" />
+
+    <TextView
+        android:id="@+id/textSpeedVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/text_speed_marginBottom"
+        android:layout_marginStart="@dimen/text_zoom_speed_marginStart"
+        android:background="@android:color/transparent"
+        android:textColor="@color/gray_text"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/speed_normal"
+        android:textSize="@dimen/text_zoom_speed_textSize" />
+
+    <ImageButton
+        android:id="@+id/btnPlayLastVideo"
+        android:layout_width="@dimen/btn_platLastVideo_settings_size"
+        android:layout_height="@dimen/btn_platLastVideo_settings_size"
+        android:visibility="visible"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/btn_platLastVideo_settings_marginBottom_Start_End"
+        android:layout_marginStart="@dimen/btn_platLastVideo_settings_marginBottom_Start_End"
+        android:background="@android:color/transparent"
+        android:src="@drawable/no_last_video"
+        android:scaleType="centerCrop"
+        android:onClick="onClickPlayLastVideo"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/btnSettings"
+        android:layout_width="@dimen/btn_platLastVideo_settings_size"
+        android:layout_height="@dimen/btn_platLastVideo_settings_size"
+        android:visibility="visible"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/btn_platLastVideo_settings_marginBottom_Start_End"
+        android:layout_marginEnd="@dimen/btn_platLastVideo_settings_marginBottom_Start_End"
+        android:background="@android:color/transparent"
+        android:src="@drawable/settings_button"
+        android:scaleType="centerCrop"
+        android:onClick="onClickSettings"
+        tools:ignore="ContentDescription" />
+
+    <RelativeLayout
+        android:id="@+id/waitRelLay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone"
+        android:background="@color/black_background_with_transparency">
+
+        <ImageButton
+            android:id="@+id/waitBtnClose"
+            android:layout_width="@dimen/top_panel_height_size_flash_mic_cam"
+            android:layout_height="@dimen/top_panel_height_size_flash_mic_cam"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="end"
+            android:background="@color/transparent"
+            android:onClick="onClickWaitCancel"
+            android:src="@drawable/wait_btn_close"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/waitText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/wait_text_marginTop"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/save_video_wait"
+            android:textSize="@dimen/wait_text_size"
+            tools:ignore="RelativeOverlap" />
+
+        <ImageView
+            android:layout_width="@dimen/rotate_anim_pictures_size_and_marginTop"
+            android:layout_height="@dimen/rotate_anim_pictures_size_and_marginTop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/rotate_anim_pictures_size_and_marginTop"
+            android:layout_marginBottom="@dimen/btn_record_save_cancel_marginBottom"
+            android:src="@drawable/wait_camillion"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/waitAnimPicture1"
+            android:layout_width="@dimen/rotate_anim_pictures_size_and_marginTop"
+            android:layout_height="@dimen/rotate_anim_pictures_size_and_marginTop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/rotate_anim_pictures_size_and_marginTop"
+            android:layout_marginBottom="@dimen/btn_record_save_cancel_marginBottom"
+            android:src="@drawable/wait_anim_picture1"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/waitAnimPicture2"
+            android:layout_width="@dimen/rotate_anim_pictures_size_and_marginTop"
+            android:layout_height="@dimen/rotate_anim_pictures_size_and_marginTop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/rotate_anim_pictures_size_and_marginTop"
+            android:layout_marginBottom="@dimen/btn_record_save_cancel_marginBottom"
+            android:src="@drawable/wait_anim_picture2"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/waitAnimPicture3"
+            android:layout_width="@dimen/rotate_anim_pictures_size_and_marginTop"
+            android:layout_height="@dimen/rotate_anim_pictures_size_and_marginTop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/rotate_anim_pictures_size_and_marginTop"
+            android:layout_marginBottom="@dimen/btn_record_save_cancel_marginBottom"
+            android:src="@drawable/wait_anim_picture3"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/waitAnimPicture4"
+            android:layout_width="@dimen/rotate_anim_pictures_size_and_marginTop"
+            android:layout_height="@dimen/rotate_anim_pictures_size_and_marginTop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/rotate_anim_pictures_size_and_marginTop"
+            android:layout_marginBottom="@dimen/btn_record_save_cancel_marginBottom"
+            android:src="@drawable/wait_anim_picture4"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/waitPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/btn_record_save_cancel_marginBottom"
+            android:gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:text="0%"
+            android:textSize="@dimen/btn_save_waitPercent_textSize"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+</FrameLayout>

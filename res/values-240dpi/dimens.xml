@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--nexus one + fly + nexus S = 480x800 hdpi-->
+
+    <!-- splash screen -->
+    <dimen name="splash_company_text">15sp</dimen>
+    <dimen name="splashCompany_paymentRestore_marginBottom">24dp</dimen>
+
+    <!-- top panel -->
+    <dimen name="top_panel_height_size_flash_mic_cam">40dp</dimen>
+    <dimen name="btn_flash_marginStart_End_Top_Bottom">4dp</dimen>
+    <dimen name="speed_video_text">29sp</dimen>
+    <dimen name="format_video_text">28sp</dimen>
+    <dimen name="cam_icon_width">60dp</dimen>
+    <dimen name="timer_video_record_text">26sp</dimen>
+
+    <!-- record, cancel, save buttons -->
+    <dimen name="btn_video_record_width_height">320dp</dimen>
+    <dimen name="btn_record_save_cancel_marginBottom">50dp</dimen>
+    <dimen name="btn_cancel_textSize">30sp</dimen>
+    <dimen name="btn_save_waitPercent_textSize">40sp</dimen>
+    <dimen name="red_line_height">6dp</dimen>
+
+    <!-- play last video and settings buttons-->
+    <dimen name="btn_platLastVideo_settings_size">45dp</dimen>
+    <dimen name="btn_platLastVideo_settings_marginBottom_Start_End">20dp</dimen>
+
+    <!-- zoom and speed text-->
+    <dimen name="text_zoom_speed_marginStart">15dp</dimen>
+    <dimen name="text_zoom_marginBottom">65dp</dimen>
+    <dimen name="text_speed_marginBottom">15dp</dimen>
+    <dimen name="text_zoom_speed_textSize">55sp</dimen>
+
+    <!-- waiting process -->
+    <dimen name="wait_text_marginTop">80dp</dimen>
+    <dimen name="wait_text_size">25sp</dimen>
+    <dimen name="rotate_anim_pictures_size_and_marginTop">200dp</dimen>
+
+    <!-- settings -->
+    <dimen name="close_setting_size">30dp</dimen>
+    <dimen name="settings_text_size">40sp</dimen>
+    <dimen name="description_settings_height">42dp</dimen>
+    <dimen name="description_settings_text_size">15sp</dimen>
+    <dimen name="description_marginStart_End">10dp</dimen>
+    <dimen name="settings_item_text_size">25sp</dimen>
+    <dimen name="selected_settings_item_text_size">35sp</dimen>
+    <dimen name="settings_infinity_time_size">15dp</dimen>
+    <dimen name="selected_settings_infinity_time_size">25dp</dimen>
+    <dimen name="under_item_text_size">10sp</dimen>
+    <dimen name="standart_settings_line">101dp</dimen>
+    <dimen name="settings_line_with_text">130dp</dimen>
+    <dimen name="settings_line_only_buttons">60dp</dimen>
+
+    <!-- payment -->
+    <dimen name="payment_btn_close_size">35dp</dimen>
+    <dimen name="payment_btn_close_marginTop">15dp</dimen>
+    <dimen name="payment_btn_close_marginEnd">10dp</dimen>
+    <dimen name="payment_restore_text_size">18sp</dimen>
+    <dimen name="payment_purchase_width">230dp</dimen>
+    <dimen name="payment_purchase_height">60dp</dimen>
+    <dimen name="payment_purchase_marginBottom">60dp</dimen>
+</resources>

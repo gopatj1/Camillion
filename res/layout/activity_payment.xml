@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/transparent"
+    android:alpha="0.9"
+    tools:context=".subscribe.PaymentActivity">
+
+    <ImageView
+        android:id="@+id/paymentBackgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/payment_background_en"
+        tools:ignore="ContentDescription" />
+
+    <View
+        android:id="@+id/purchase"
+        android:layout_width="@dimen/payment_purchase_width"
+        android:layout_height="@dimen/payment_purchase_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/payment_purchase_marginBottom" />
+
+    <TextView
+        android:id="@+id/restorePurchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/splashCompany_paymentRestore_marginBottom"
+        android:text="@string/payment_restore"
+        android:fontFamily="sans-serif-light"
+        android:textSize="@dimen/payment_restore_text_size"/>
+
+    <ImageButton
+        android:id="@+id/paymentBtnClose"
+        android:layout_width="@dimen/payment_btn_close_size"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/payment_btn_close_marginTop"
+        android:layout_marginEnd="@dimen/payment_btn_close_marginEnd"
+        android:scaleType="centerInside"
+        android:background="@color/transparent"
+        android:src="@drawable/wait_btn_close"
+        tools:ignore="ContentDescription" />
+</RelativeLayout>

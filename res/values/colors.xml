@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cam_preview_main_frame_lay_back">#FFFFFF</color>
+    <color name="white_text">#FFFFFF</color>
+    <color name="gray_text">#666666</color>
+    <color name="black_background">#000000</color>
+    <color name="black_background_with_transparency">#DD000000</color>
+    <color name="gray_in_settings">#979797</color>
+    <color name="gray_dark_in_settings">#40FFFFFF</color>
+    <color name="selected_settings_item">#4A90E2</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="white_transparent_55_percent">#80FFFFFF</color>
+</resources>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standart_settings_line"
+            android:orientation="vertical">
+            
+            <TextView
+                android:id="@+id/textSpeedFast"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/description_settings_height"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/description_marginStart_End"
+                android:layout_marginEnd="@dimen/description_marginStart_End"
+                android:textColor="@color/gray_in_settings"
+                android:textSize="@dimen/description_settings_text_size"
+                android:text="@string/speed_fast_settings"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="8"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/btnSpeedFast3x"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:text="3x"
+                        android:textColor="@color/gray_in_settings"
+                        android:textSize="@dimen/settings_item_text_size"
+                        tools:ignore="HardcodedText,NestedWeights" />
+
+                    <TextView
+                        android:id="@+id/btnSpeedFast4x"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/gray_in_settings"
+                        android:fontFamily="sans-serif-light"
+                        android:textSize="@dimen/settings_item_text_size"
+                        android:text="4x"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/btnSpeedFast5x"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/gray_in_settings"
+                        android:fontFamily="sans-serif-light"
+                        android:textSize="@dimen/settings_item_text_size"
+                        android:text="5x"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/gray_dark_in_settings"
+                        android:fontFamily="sans-serif-light"
+                        android:textSize="@dimen/under_item_text_size"
+                        android:text="@string/silent_movie"
+                        tools:ignore="NestedWeights" />
+
+                    <View
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"/>
+
+                    <View
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standart_settings_line"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textSpeedSlow"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/description_settings_height"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/description_marginStart_End"
+                android:layout_marginEnd="@dimen/description_marginStart_End"
+                android:textColor="@color/gray_in_settings"
+                android:textSize="@dimen/description_settings_text_size"
+                android:text="@string/speed_slow_settings"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btnSpeedSlow2x"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/gray_in_settings"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="@dimen/settings_item_text_size"
+                    android:text="1/2x"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/btnSpeedSlow3x"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/gray_in_settings"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="@dimen/settings_item_text_size"
+                    android:text="1/3x"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/btnSpeedSlow4x"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/gray_in_settings"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="@dimen/settings_item_text_size"
+                    android:text="1/4x"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standart_settings_line"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textVideoQuality"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/description_settings_height"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/description_marginStart_End"
+                android:layout_marginEnd="@dimen/description_marginStart_End"
+                android:textColor="@color/gray_in_settings"
+                android:textSize="@dimen/description_settings_text_size"
+                android:text="@string/video_quality_settings"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="12"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"/>
+
+                <TextView
+                    android:id="@+id/btnVideoQualityHD"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:textColor="@color/gray_in_settings"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="@dimen/settings_item_text_size"
+                    android:text="HD"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/btnVideoQualitySD"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:textColor="@color/gray_in_settings"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="@dimen/settings_item_text_size"
+                    android:text="SD"
+                    tools:ignore="HardcodedText" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_line_with_text"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textTimeLimit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/description_settings_height"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/description_marginStart_End"
+                android:layout_marginEnd="@dimen/description_marginStart_End"
+                android:textColor="@color/gray_in_settings"
+                android:textSize="@dimen/description_settings_text_size"
+                android:text="@string/time_limit_settings"/>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="7"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/btnTimeLimit15"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/gray_in_settings"
+                        android:fontFamily="sans-serif-light"
+                        android:textSize="@dimen/settings_item_text_size"
+                        android:text="15'"
+                        tools:ignore="HardcodedText,NestedWeights" />
+
+                    <TextView
+                        android:id="@+id/btnTimeLimit60"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/gray_in_settings"
+                        android:fontFamily="sans-serif-light"
+                        android:textSize="@dimen/settings_item_text_size"
+                        android:text="60'"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageButton
+                        android:id="@+id/btnTimeNoLimit"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/settings_infinity_time_size"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:background="@color/black_background_with_transparency"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/infinity_icon"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/gray_dark_in_settings"
+                        android:fontFamily="sans-serif-light"
+                        android:textSize="@dimen/under_item_text_size"
+                        android:text="@string/instagram_stories"
+                        tools:ignore="NestedWeights" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|top"
+                        android:textColor="@color/gray_dark_in_settings"
+                        android:fontFamily="sans-serif-light"
+                        android:textSize="@dimen/under_item_text_size"
+                        android:text="@string/instagram"/>
+
+                    <View
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

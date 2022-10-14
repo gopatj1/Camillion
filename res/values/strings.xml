@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name" translatable="false">Camillion</string>
+    <string name="splash_company" translatable="false">© 2013–2018, iRevolution Ltd.</string>
+    <string name="speed_normal" translatable="false">Normal</string>
+    <string name="speed_fast" translatable="false">Fast</string>
+    <string name="speed_slow" translatable="false">Slow</string>
+    <string name="format_1x1" translatable="false">1x1</string>
+    <string name="format_4x5" translatable="false">4x5</string>
+    <string name="format_9x16" translatable="false">9x16</string>
+    <string name="format_16x10" translatable="false">16x10</string>
+    <string name="format_16x9" translatable="false">16x9</string>
+    <string name="zoom_text_0_0x" translatable="false">0.0x</string>
+    <string name="cancel_record" translatable="false">Cancel</string>
+    <string name="save_record" translatable="false">Save</string>
+    <string name="flash_light_error">This camera is not supported flash light</string>
+    <string name="press_and_hold_button_for_shoot">Press and hold the button longer to record video</string>
+    <string name="save_video_wait">Wait…\nWe save your video.\nIt can take some time…</string>
+    <string name="save_video_fragments_wait">Wait…\nWe save your video from\nfragments.\nIt can take some time…</string>
+    <string name="save_video_finished">Your video is successfully save in the \«Gallery/Camillion\»</string>
+    <string name="save_0_percent" translatable="false">0%</string>
+    <string name="save_100_percent" translatable="false">100%</string>
+    <string name="no_last_videos">Doesn\'t exists last video. Please, record new video</string>
+    <string name="permission_error">You must allow permissions write/read to external storage,
+        use camera and record audio for correctly application\'s work.
+        Restart app and try again or check the permissions settings</string>
+    <string name="cant_save_video">Failed to process and save your video!</string>
+    <string name="not_support_ffmpeg">Unfortunately, not all app features are supported by your device! Errors may occur!</string>
+    <string name="not_support_ffmpeg_positive_btn">Continue work</string>
+    <string name="not_support_ffmpeg_negative_btn">Close the app</string>
+    <string name="cant_use_mic">You cannot use the microphone during slow motion or fast motion!</string>
+    <string name="attention">Attention!</string>
+
+    <!-- Settings Activity texts -->
+    <string name="settings" translatable="false">Settings</string>
+    <string name="speed_fast_settings">Set the Rate of Acceleration of Shooting – FAST</string>
+    <string name="speed_slow_settings">Set Slow Motion Ratio– SLOW</string>
+    <string name="video_quality_settings">Set the Video Quality</string>
+    <string name="time_limit_settings">Set Video Time Limit</string>
+    <string name="screen_format_settings">Set Proportions of the Screen</string>
+    <string name="preview_and_edit_settings">Preview and Edit Video</string>
+    <string name="silent_movie">(Silent Movie)</string>
+    <string name="instagram" translatable="false">(lnstagram)</string>
+    <string name="instagram_stories" translatable="false">(lnstagram\nStories)</string>
+    <string name="can_not_remove_format_item">At least one video format must be selected!</string>
+    <string name="click_item_yes">This feature will be available in the next version! Watch for updates</string>
+
+    <!-- Payment Activity texts -->
+    <string name="payment_restore"><u>Restore purchases</u></string>
+    <string name="payment_restore_success">Purchases successfully restored</string>
+    <string name="payment_purchase_stop">Purchase don\'t made!</string>
+    <string name="payment_no_restore">No purchases to restore</string>
+    <string name="payment_restore_error">Purchase error: </string>
+    <string name="payment_restore_error_auth">Purchase error. Failed to login</string>
+    <string name="payment_no_internet">Unable to restore purchases! Check your Internet connection</string>
+    <string name="payment_no_internet_try_again">Try again</string>
+    <string name="payment_no_internet_exit">Exit</string>
+</resources>

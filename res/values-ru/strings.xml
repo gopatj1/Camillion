@@ -1,0 +1,39 @@
+<resources>
+    <string name="flash_light_error">Эта камера не поддерживает вспышку</string>
+    <string name="press_and_hold_button_for_shoot">Нажмите и удерживайте кнопку дольше для записи видео</string>
+    <string name="save_video_wait">Подождите…\nМы сохраняем ваше видео.\nЭто может занять некоторое время…</string>
+    <string name="save_video_fragments_wait">Подождите…\nМы создаем видео\nиз фрагментов.\nЭто может занять некоторое время…</string>
+    <string name="save_video_finished">Ваше видео\nуспешно сохранено\nв папке \«Галлерея/Camillion\»</string>
+    <string name="no_last_videos">Отсутствует видео. Начните снимать новое видео</string>
+    <string name="permission_error">Вы должны разрешить чтение/запись внутреннего хранилища,
+        использование камеры и запись аудио для корректной работы приложения.
+        Перезапустите приложение и попробуйте снова или проверьте параметры разрешений</string>
+    <string name="cant_save_video">Не удалось обработать и сохранить ваше видео!</string>
+    <string name="not_support_ffmpeg">К сожалению, не все функции приложения поддерживаются вашим устройством! Могут возникнуть ошибки!</string>
+    <string name="not_support_ffmpeg_positive_btn">Продолжить работу</string>
+    <string name="not_support_ffmpeg_negative_btn">Закрыть приложение</string>
+    <string name="cant_use_mic">Нельзя использовать микрофон во время замедленной или ускоренной съемки!</string>
+    <string name="attention">Внимание!</string>
+
+    <!-- Settings Activity texts -->
+    <string name="speed_fast_settings">Установите коэффициент ускорения съемки – FAST</string>
+    <string name="speed_slow_settings">Установите коэффициент замедления съемки – SLOW</string>
+    <string name="video_quality_settings">Установите качество съемки</string>
+    <string name="time_limit_settings">Установите ограничение времени съемки</string>
+    <string name="screen_format_settings">Установите пропорции экранов</string>
+    <string name="preview_and_edit_settings">Просмотр и редактирование видео</string>
+    <string name="silent_movie">(Немое кино)</string>
+    <string name="can_not_remove_format_item">Как минимум один формат видеосъемки должен быть выбран!</string>
+    <string name="click_item_yes">Данная функция будет доступна в следующей версии! Следите за обновлениями</string>
+
+    <!-- Payment Activity texts -->
+    <string name="payment_restore"><u>Восстановить покупки</u></string>
+    <string name="payment_restore_success">Покупки успешно восстановлени</string>
+    <string name="payment_purchase_stop">Покупка не совершена!</string>
+    <string name="payment_no_restore">Нет покупок для восстановления</string>
+    <string name="payment_restore_error">Ошибка покупки: </string>
+    <string name="payment_restore_error_auth">Ошибка покупки. Не удалось авторизоваться</string>
+    <string name="payment_no_internet">Не удалось восстановить покупки! Проверьте интернет-соединение</string>
+    <string name="payment_no_internet_try_again">Попробовать снова</string>
+    <string name="payment_no_internet_exit">Выйти</string>
+</resources>
