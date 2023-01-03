@@ -8,5 +8,5 @@ It is possible to shoot a video from individual pieces and combine it into one. 
   <img src="2.png" height="350"/><br><br>
   <img src="3.png" height="350"/><br><br>
   <img src="4.png" height="350"/><br><br>
-  <img src="5.png" height="350"/>
+  <img src="5.png" height="350"/> 
 </p>
